@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Hybrid ML for Next-Day Stock Forecasting (AAPL)"
+message: "If you use this project, please cite it as below."
+authors:
+  - family-names: "Al Tawab"
+    given-names: "Abdullah"
+date-released: 2025-08-13
+license: MIT
+repository-code: "https://github.com/YOUR-USERNAME/YOUR-REPO"
