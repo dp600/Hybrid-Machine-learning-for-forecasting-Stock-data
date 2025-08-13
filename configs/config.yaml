@@ -1,0 +1,30 @@
+data:
+  symbol: AAPL
+  start: 1995-01-01         # ← replace with your real start date
+  end: 2025-08-01           # ← replace with your real end date
+  cutoff_train: 2018-12-31  # chronological split cutoff
+
+features:
+  include: [RSI, MACD, SMA_10, EMA_10, Momentum, Volatility, BB_lower, BB_range, Lag_1, Lag_2, Lag_3]
+  lookbacks: {sma10: 10, ema10: 10, rsi: 14, macd_fast: 12, macd_slow: 26, bb: 20}
+
+xgb:
+  n_estimators: 100
+  max_depth: 4
+  learning_rate: 0.03
+  subsample: 0.9
+  colsample_bytree: 0.9
+  gamma: 0.1
+  objective: reg:squarederror
+  seed: 42
+  early_stopping_rounds: 50
+
+seq:
+  lookback: 15
+  lstm_units: 128
+  dense_units: 32
+  dropout_1: 0.30
+  dropout_2: 0.20
+  batch_size: 32
+  epochs: 40
+  seed: 42
