@@ -1,5 +1,5 @@
-# Hybrid ML for Next-Day Stock Forecasting (APPLE)
-*A fixed **XGBoost → LSTM** pipeline with a **chronological split** to forecast next-day Apple closing price.*
+# Hybrid ML for Stock Forecasting (APPLE)
+*A fixed **XGBoost → LSTM** pipeline with a **chronological split** to forecast next-day closing price of Apple closing price.*
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
