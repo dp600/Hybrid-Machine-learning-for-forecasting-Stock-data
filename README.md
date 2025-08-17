@@ -40,10 +40,11 @@
 
 - 
 ## Results  
-| Split | RMSE (final) | R^2 (final) |
-| Test  | 9.89           | 0.9681       
 
-**Figures**  
+<img width="149" height="35" alt="image" src="https://github.com/user-attachments/assets/d70343b2-9bae-4e7c-aa79-1b5ef03ef3e9" />
+      
+
+**Figures of SHAP analysis and Final output**  
 <img width="610" height="440" alt="image" src="https://github.com/user-attachments/assets/ef718a34-acd3-4d78-8f34-1475bb847e75" />
 
 <img width="1079" height="436" alt="image" src="https://github.com/user-attachments/assets/d1595006-a134-4ce1-9ed5-4c3c73919094" />
