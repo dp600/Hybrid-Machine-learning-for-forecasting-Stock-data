@@ -41,7 +41,6 @@
 - 
 ## Results  
 | Split | RMSE (return) | R^2 (return) |
-
 | Test  | 9.89           | 0.9681       
 
 **Figures**  
@@ -56,7 +55,7 @@
 
 ## Project files (quick access)
 
-- [`configs/config.yaml`](configs/config.py)
+- [`configs/config.yaml`](configs/config.yaml)
 - [`src/data/download_data.py`](src/data/download_data.py)
 - [`src/models/train_xgb.py`](src/models/train_xgb.py)
 - [`src/models/train_lstm.py`](src/models/train_lstm.py)
