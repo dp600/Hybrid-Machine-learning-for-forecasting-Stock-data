@@ -1,0 +1,9 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Hide the Cayman header CTA button only */
+.page-header .btn {
+  display: none !important;
+}
