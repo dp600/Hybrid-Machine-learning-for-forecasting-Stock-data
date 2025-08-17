@@ -66,7 +66,7 @@ Research purpose only; **not financial advice**. Verify data licensing and corpo
 ## Project files (quick access)
 
 - [`configs/config.yaml`](configs/config.yaml)
-- [`notebooks/quickstart.ipynb`](notebooks/quickstart.ipynb)
+- [src/data/download_data.py]
 - [`src/models/train_xgb.py`](src/models/train_xgb.py)
 - [`src/models/train_lstm.py`](src/models/train_lstm.py)
 - [`src/models/evaluate.py`](src/models/evaluate.py)
