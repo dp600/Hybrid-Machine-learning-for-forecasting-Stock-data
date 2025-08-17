@@ -42,9 +42,11 @@
   - `data.start: 1981-01-01` · `data.end: 2025-03-20` · `data.cutoff_train: 2015-12-31`  
   - `seq.lookback: 15` · `xgb.n_estimators: 100` · `xgb.learning_rate: 0.03`
 
-## Results  *(replace with your numbers)*
+## Results  
 | Split | RMSE (return) | R^2 (return) |
+
 |------:|---------------:|-------------:
+
 | Test  | 9.89           | 0.9681       
 
 **Figures**  
@@ -66,9 +68,9 @@ Research purpose only; **not financial advice**. Verify data licensing and corpo
 ## Project files (quick access)
 
 - [`configs/config.yaml`](configs/config.yaml)
-- [src/data/download_data.py](src/data/download_data.py)
-- [`src/models/train_xgb.py`](src/models/train_xgb.py)
-- [`src/models/train_lstm.py`](src/models/train_lstm.py)
+- [`src/data/download_data.yaml`](src/data/download_data.yaml)
+- [`src/models/train_xgb.yaml`](src/models/train_xgb.yaml)
+- [`src/models/train_lstm.yaml`](src/models/train_lstm.yaml)
 
 
 
