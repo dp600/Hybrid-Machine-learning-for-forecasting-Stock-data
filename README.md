@@ -40,7 +40,7 @@
 
 - 
 ## Results  
-| Split | RMSE (return) | R^2 (return) |
+| Split | RMSE (final) | R^2 (final) |
 | Test  | 9.89           | 0.9681       
 
 **Figures**  
