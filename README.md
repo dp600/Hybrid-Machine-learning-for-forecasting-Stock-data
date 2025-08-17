@@ -63,6 +63,13 @@ Research purpose only; **not financial advice**. Verify data licensing and corpo
 ## Contact (Ireland)
 **Abdullah Al Tawab — Dublin** · Open to walk-throughs and technical discussion.
 
+## Project files (quick access)
+
+- [`configs/config.yaml`](configs/config.yaml)
+- [`notebooks/quickstart.ipynb`](notebooks/quickstart.ipynb)
+- [`src/models/train_xgb.py`](src/models/train_xgb.py)
+- [`src/models/train_lstm.py`](src/models/train_lstm.py)
+- [`src/models/evaluate.py`](src/models/evaluate.py)
 
 
 
