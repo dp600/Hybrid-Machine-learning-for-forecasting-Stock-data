@@ -2,7 +2,8 @@
 *A fixed **XGBoost → LSTM** pipeline with a **chronological split** to forecast next-day Apple closing price.*
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Cite this repo](https://img.shields.io/badge/Cite-CITATION.cff-blue)](CITATION.cff)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XT7KS9PuJnqa8g7dV8AorjTCziD_3icp?usp=sharing)
 [![Based in Ireland](https://img.shields.io/badge/Based%20in-Ireland-169B62)](#)
 
@@ -59,19 +60,23 @@
 - Deterministic seeds (42); no data leakage (fit transforms on train only).
 - Config-driven runs; artifacts saved for audit; concise, documented functions.
 
-## Ethics & Disclaimer
-Research purpose only; **not financial advice**. Verify data licensing and corporate actions.
-
-## Contact (Ireland)
-**Abdullah Al Tawab — Dublin** · Open to walk-throughs and technical discussion.
-
 ## Project files (quick access)
 
 - [`configs/config.yaml`](configs/config.py)
 - [`src/data/download_data.py`](src/data/download_data.py)
 - [`src/models/train_xgb.py`](src/models/train_xgb.py)
 - [`src/models/train_lstm.py`](src/models/train_lstm.py)
+## Ethics & Disclaimer
+Research purpose only; **not financial advice**. Verify data licensing and corporate actions.
 
+## Contact (Ireland)
+**Abdullah Al Tawab — Dublin** · Open to walk-throughs and technical discussion.
+
+
+## License & Citation
+- **License:** [MIT](LICENSE)
+- **How to cite:** see [CITATION.cff](CITATION.cff) or GitHub’s citation page:
+  https://github.com/dp600/Hybrid-Machine-learning-for-forecasting-Stock-data/citation
 
 
 
