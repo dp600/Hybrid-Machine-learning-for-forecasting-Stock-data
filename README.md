@@ -39,16 +39,19 @@
 ## Config (excerpt)
 - `configs/config.yaml` holds dates, features, model params, and the **chronological cutoff**.
 - Example settings:  
-  - `data.start: 1995-01-01` · `data.end: 2025-08-01` · `data.cutoff_train: 2018-12-31`  
+  - `data.start: 1981-01-01` · `data.end: 2025-03-20` · `data.cutoff_train: 2015-12-31`  
   - `seq.lookback: 15` · `xgb.n_estimators: 100` · `xgb.learning_rate: 0.03`
 
 ## Results  *(replace with your numbers)*
-| Split | RMSE (return) | MAE (return) | Directional Accuracy |
-|------:|---------------:|-------------:|---------------------:|
-| Test  | YOUR_RMSE      | YOUR_MAE     | YOUR_HIT_RATE%       |
+| Split | RMSE (return) | R^2 (return) |
+|------:|---------------:|-------------:
+| Test  | 9.89           | 0.9681       
 
 **Figures**  
-`reports/figures/xgb_shap_summary.png` · `reports/figures/pred_vs_actual.png`
+<img width="610" height="440" alt="image" src="https://github.com/user-attachments/assets/ef718a34-acd3-4d78-8f34-1475bb847e75" />
+
+<img width="1079" height="436" alt="image" src="https://github.com/user-attachments/assets/d1595006-a134-4ce1-9ed5-4c3c73919094" />
+
 
 ## Reproducibility & Quality
 - Deterministic seeds (42); no data leakage (fit transforms on train only).
