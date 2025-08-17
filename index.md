@@ -1,3 +1,6 @@
+
+{% include_relative README.md %}
+
 ## Data acquisition (auto-synced)
 
 {% include_relative src/data/download_data.py %}
@@ -10,5 +13,3 @@
 
 ## Train LSTM (auto-synced)
 {% include_relative src/models/train_lstm.py %}
-
-{% include_relative README.md %}
