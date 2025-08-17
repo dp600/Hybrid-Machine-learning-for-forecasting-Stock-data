@@ -46,8 +46,6 @@
 ## Results  
 | Split | RMSE (return) | R^2 (return) |
 
-|------:|---------------:|-------------:
-
 | Test  | 9.89           | 0.9681       
 
 **Figures**  
@@ -66,6 +64,8 @@
 - [`src/data/download_data.py`](src/data/download_data.py)
 - [`src/models/train_xgb.py`](src/models/train_xgb.py)
 - [`src/models/train_lstm.py`](src/models/train_lstm.py)
+
+  
 ## Ethics & Disclaimer
 Research purpose only; **not financial advice**. Verify data licensing and corporate actions.
 
@@ -73,10 +73,7 @@ Research purpose only; **not financial advice**. Verify data licensing and corpo
 **Abdullah Al Tawab — Dublin** · Open to walk-throughs and technical discussion.
 
 
-## License & Citation
-- **License:** [MIT](LICENSE)
-- **How to cite:** see [CITATION.cff](CITATION.cff) or GitHub’s citation page:
-  https://github.com/dp600/Hybrid-Machine-learning-for-forecasting-Stock-data/citation
+
 
 
 
