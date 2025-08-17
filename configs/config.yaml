@@ -1,8 +1,8 @@
 data:
   symbol: AAPL
-  start: 1995-01-01         # ← replace with your real start date
-  end: 2025-08-01           # ← replace with your real end date
-  cutoff_train: 2018-12-31  # chronological split cutoff
+  start: 1980-01-01        
+  end: 2025-03-20          
+  cutoff_train: 2015-12-31  # chronological split cutoff
 
 features:
   include: [RSI, MACD, SMA_10, EMA_10, Momentum, Volatility, BB_lower, BB_range, Lag_1, Lag_2, Lag_3]
