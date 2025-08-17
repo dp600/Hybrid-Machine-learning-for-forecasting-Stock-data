@@ -1,4 +1,4 @@
-# Hybrid ML for Next-Day Stock Forecasting (AAPL)
+# Hybrid ML for Next-Day Stock Forecasting (APPLE)
 *A fixed **XGBoost → LSTM** pipeline with a **chronological split** to forecast next-day Apple closing price.*
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](#)
@@ -11,7 +11,7 @@
 - **Design:** Train **XGBoost** to predict **t+1 log return**; feed the ordered XGBoost predictions into an **LSTM** to produce the **final forecast** (no compromise on order).
 - **Discipline:** **Chronological split** (past → future), strict target alignment, no leakage.
 - **Explainability:** **SHAP** on the XGBoost stage (global + local).
-- **Deliverable:** Reproducible pipeline with **RMSE / MAE** and **Directional Accuracy** on a held-out test period.
+- **Deliverable:** Reproducible pipeline with **RMSE / R^2** and **Directional Accuracy** on a held-out test period.
 
 ## Problem & Target
 - **Question:** Can a sequential hybrid (**XGBoost → LSTM**) outperform standalone models for next-day AAPL?
@@ -26,23 +26,19 @@
 - **Leakage controls:** Any scaling/encoding is fit on **train only**; the target is strictly **t+1**.
 
 ## Pipeline (high level)
-1) Feature engineering on OHLCV  
-2) **XGBoost** predicts next-day log return  
-3) **SHAP** explains XGBoost  
+
+1) Feature engineering on OHLCV (Open, High, Low, Close, Volume) 
+2) **XGBoost** predicts next-day log return and then reconstruct price
+3) **SHAP** explains feature contribution to XGBOOST  
 4) **LSTM** consumes the **ordered XGBoost prediction stream** to model temporal dependence  
-5) Reconstruct next-day price from predicted return  
-6) Evaluate with RMSE/MAE (returns & prices) and Directional Accuracy
+5) Then reconstruct next-day price from predicted log return  
+6) Evaluate with RMSE/R^2 (returns & prices) and Directional Accuracy
 
 ## How to Run
 - Use the Colab notebook (badge above) **or** run locally with your own environment and config.  
 - Stages: **prepare_data → build_features → train_xgb → shap_report → make_sequences → train_lstm → evaluate**.
 
-## Config (excerpt)
-- `configs/config.yaml` holds dates, features, model params, and the **chronological cutoff**.
-- Example settings:  
-  - `data.start: 1981-01-01` · `data.end: 2025-03-20` · `data.cutoff_train: 2015-12-31`  
-  - `seq.lookback: 15` · `xgb.n_estimators: 100` · `xgb.learning_rate: 0.03`
-
+- 
 ## Results  
 | Split | RMSE (return) | R^2 (return) |
 
