@@ -16,10 +16,10 @@ xgb:
   colsample_bytree: 0.9
   gamma: 0.1
   objective: reg:squarederror
-  seed: 42
-  early_stopping_rounds: 50
+  random state: 42
+  
 
-seq:
+LSTM:
   lookback: 15
   lstm_units: 128
   dense_units: 32
